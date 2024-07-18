@@ -1,6 +1,7 @@
 # opencv_js_sample
 
 ## Contents
+All the follow projects used [vite](https://vitejs.dev/), so please install with `npm` if you would like to download and use these projects. 
 
 ### Import and build
 - Build infomation of opencv.js - 0101buildinfo/<br>
