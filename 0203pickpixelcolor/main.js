@@ -1,4 +1,5 @@
 import './style.scss'
+import mashroomImage from './img/mashroom.png';
 import Overlay from './js/overlay.js';
 import ntc from './js/ntc.js';
 // ダイナミックインポートを使用してopencv.jsを非同期に読み込む
@@ -16,7 +17,7 @@ document.querySelector('#app').innerHTML = `
   <kbd>Alt</kbd> + It will release Mat with left mouse.
   </p>
   <div id="container">
-    <img id="image" width="320" src="./img/mashroom.png" alt="mashroom">
+    <img id="image" width="320" src="${mashroomImage}" alt="mashroom">
     元: <canvas id="canvas" class="placeholder"></canvas>
     色名: <canvas id="canvas2" class="placeholder"></canvas>
   </div>

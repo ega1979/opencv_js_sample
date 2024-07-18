@@ -1,4 +1,5 @@
 import './style.scss'
+import mashroomImage from './img/mashroom.png';
 // ダイナミックインポートを使用してopencv.jsを非同期に読み込む
 (async () => {
   try {
@@ -11,7 +12,7 @@ import './style.scss'
 document.querySelector('#app').innerHTML = `
   <h1>Examing the structure of an image</h1>
   <div>
-    <img id="image" width="320" src="./img/mashroom.png" alt="mashroom">
+    <img id="image" width="320" src="${mashroomImage}" alt="mashroom">
     <canvas id="canvas" class="placeholder"></canvas>
   </div>
   `
