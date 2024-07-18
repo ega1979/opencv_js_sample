@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-const base = process.env.NODE_ENV === 'production' ? '/opencv/videoadd/' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/opencv/miniture/' : '/';
 
 export default defineConfig({
     base,

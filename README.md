@@ -41,6 +41,9 @@
 - Camera Flip - 0302cameraflip/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/videoflip/)
+- Video Miniture - 0303miniture/
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/miniture/)
 
 ## Download and Install
 
