@@ -38,8 +38,9 @@
 - Composite video frames and images - 0301addimage/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/videoadd/)
-- Camera Flip - 0302
-
+- Camera Flip - 0302cameraflip/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/videoflip/)
 
 ## Download and Install
 
