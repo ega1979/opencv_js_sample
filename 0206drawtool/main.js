@@ -62,16 +62,6 @@ const selectColor = (e) => {
 }
 
 const paint = (e) => {
-  // if(e.altKey){
-  //   mat.delete();
-  //   console.log('Mat released. Refresh to restart');
-  //   canvas.removeEventListener('mousemove', paint);
-  //   return
-
-  // } else if(! e.ctrlKey) {
-  //   return;
-  // }
-  //console.log("e: ", e);
   if (!isDrawing) return;
 
   let [r, g, b] = colors[selectedColor];
