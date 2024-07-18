@@ -1,5 +1,4 @@
 import './style.scss'
-
 // ダイナミックインポートを使用してopencv.jsを非同期に読み込む
 (async () => {
   try {
