@@ -9,51 +9,47 @@ import './style.scss'
 })();
 
 document.querySelector('#app').innerHTML = `
-  <h1>The list of consts of opencv.js</h1>
+  <h1>Examing the structure of an image</h1>
   <div>
-    <select id="select">
-      <option value="noop selected">Select a const</option>
-      <option value="^CV_\d{1,2}[SUF]">データ型</option>
-      <option value="^COLOR">色空間変換</option>
-      <option value="^THRESH">閾値</option>
-      <option value="^INTER">ピクセル値補間方法</option>
-      <option value="^BORDER">画像端外挿方法</option>
-      <option value="^LINE">描画線種</option>
-      <option value="^MORPH">モルフォロジー演算タイプ</option>
-      <option value="^OPTFLOW">オプティカルフロー操作タイプフラグ</option>
-    </select>
+    <img id="image" width="320" src="./img/mashroom.png" alt="mashroom">
+    <canvas id="canvas" class="placeholder"></canvas>
   </div>
-  <div>
-    <pre id="pre"Const list</pre>
-  </div>
-`
-const select = document.querySelector('#select');
-const pre = document.querySelector('#pre');
+  `
 
-const showConst = (e) => {
-  const re = new RegExp(e.target.value);
-  const keys = Object.keys(cv);
+const image = document.querySelector('#image');
 
-  const selected = keys.filter((el) => {
-    return re.test(el);
-  }).sort();
+const imgProc = () => {
+  const mat = cv.imread(image);
+  cv.imshow('canvas', mat);
 
-  pre.innerHTML = selected.map((el) => {
-    return `${el} = ${cv[el]}`;
-  }).join('\n');
+  console.log(`Image metadata
+    width x height: ${image.width} x ${image.height}
+    naturalWidth x naturalHeight: ${image.naturalWidth} x ${image.naturalHeight}  
+  `);
 
-  console.log(`RegExp: ${re} extracted ${selected.length} keys`);
-};
+  console.log(`Mat metadata:
+    rows x cols: ${mat.rows} x ${mat.cols}
+    size: ${mat.size().width} x ${mat.size().height}
+    total: ${mat.total()}
+    #cannels: ${mat.channels()}
+    depth: ${mat.depth()} // cv.CV_8U = 0
+    type: ${mat.type()}   // cv.CV_8UC4 = 24
+    #data: ${mat.data.length}
+  `);
 
-const opencvReady = () => {
-  select.addEventListener('change', showConst);
-};
+  const matVector = new cv.MatVector();
+  cv.split(mat, matVector);
+  console.log('data: ', new Set(matVector.get(3).data));
+
+  mat.delete();
+  matVector.delete();
+}
 
 // Moduleを先にグローバルスコープに設定
 window.Module = {
   onRuntimeInitialized: () => {
     if (window.cv) {
-      opencvReady();
+      imgProc();
     } else {
       console.error('cv is not defined');
     }
