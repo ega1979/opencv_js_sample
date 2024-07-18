@@ -2,7 +2,8 @@ import './style.scss'
 // ダイナミックインポートを使用してopencv.jsを非同期に読み込む
 (async () => {
   try {
-    await import('./js/opencv.js');
+    const opencv = await import('./js/opencv.js');
+    console.log('import success', opencv);
   } catch (error) {
     console.error('Error loading opencv.js:', error);
   }
@@ -70,7 +71,7 @@ const paint = (e) => {
   // } else if(! e.ctrlKey) {
   //   return;
   // }
-  console.log("e: ", e);
+  //console.log("e: ", e);
   if (!isDrawing) return;
 
   let [r, g, b] = colors[selectedColor];
@@ -85,6 +86,10 @@ const paint = (e) => {
     y = e.offsetY;
   }
 
+  // 色の選択
+  select.addEventListener('change', selectColor);
+  colorOptions();
+
   let pos = (e.offsetX + e.offsetY * canvas.width) * mat.channels();
   mat.data[pos] = r;
   mat.data[pos + 1] = g;
@@ -93,12 +98,24 @@ const paint = (e) => {
 }
 
 const imgProc = () => {
+  console.log('imgProc start');
   mat = new cv.Mat(canvas.height, canvas.width, cv.CV_8UC3);
+  console.log('cv success');
   mat.setTo(new cv.Scalar(0, 0, 0));
 };
-// 色の選択
-select.addEventListener('change', selectColor);
-colorOptions();
+
+// Moduleを先にグローバルスコープに設定
+window.Module = {
+  onRuntimeInitialized: () => {
+    console.log('Module initialized');
+    //imgProc();
+    if (cv) {
+      imgProc();
+    } else {
+      console.error('cv is not defined');
+    }
+   }, 
+};
 
 // マウスイベントリスナー
 canvas.addEventListener('mousedown', () => { isDrawing = true; });
@@ -118,13 +135,8 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Moduleを先にグローバルスコープに設定
-window.Module = {
-  onRuntimeInitialized: () => {
-    if (window.cv) {
-      imgProc();
-    } else {
-      console.error('cv is not defined');
-    }
-  }
-};
+// クリアボタンのクリックイベントリスナー
+clear.addEventListener('click', () => {
+  mat.setTo(new cv.Scalar(0, 0, 0)); // 黒でクリア
+  cv.imshow('canvas', mat);
+});
