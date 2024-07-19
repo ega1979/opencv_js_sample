@@ -45,10 +45,34 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Video Miniture - 0303miniture/
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/miniture/)
+- Video Transitions - 0304transition/
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/transition/)
+- Video Mog2 - 0305mog2/
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/mog2/)
 
 ## Download and Install
-
+- OpenCV.js Library download
+  * move to the [link](https://docs.opencv.org/). 
+  * download latest version in the page.
+  * Extract the zip file you downloaded.
+  * Copy `opencv.js` file in the folder you extract and paste to your work directory.
+  + {note} The `opencv.js` file is not ES Module compatible. You need to customize it a bit to make it ES Module compatible. `opencv.js` file in this repository is already ES Module compatible.
 
 ## Build
+- develop / localserver
+```
+npm run dev
+```
 
+- production build
+```
+npm run build
+```
+After build, upload all files in the `dist` directory to your host server with FTP and so on.
 
+## Functions
+[Reference page](https://docs.opencv.org/4.10.0/d2/d75/namespacecv.html#af6df65b17fb11af6d34634b6dfa44683)
+
+## Reference
