@@ -51,6 +51,9 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Video Mog2 - 0305mog2/
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/mog2/)
+- Video Opticalflow - 0306opticalflow/
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/opticalflow/)
 
 ## Download and Install
 - OpenCV.js Library download
