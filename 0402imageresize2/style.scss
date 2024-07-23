@@ -1,13 +1,15 @@
 /* Body */
 body {
-    background-color: AliceBlue;
-    color: Indigo;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
 }
 
 /* ページタイトル */
 h1 {
     font-size: 20px;
-    color: DarkSlateBlue;
+    color: rgb(0, 0, 0);
 }
 
 /* キャンバスなど画像を表示するエリアの輪郭線 */

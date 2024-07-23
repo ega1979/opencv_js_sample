@@ -1,20 +1,10 @@
 import './style.scss'
 import mashroomImage from './img/mashroom.png'
 
-// // ダイナミックインポートを使用してopencv.jsを非同期に読み込む
-// (async () => {
-//   try {
-//     const opencv = await import('./js/opencv.js');
-//     console.log('import success', opencv);
-//   } catch (error) {
-//     console.error('Error loading opencv.js:', error);
-//   }
-// })();
-// 非同期インポートと初期化処理
 (async () => {
   try {
     const [{ default: RegionSelect }, opencv] = await Promise.all([
-      import('./js/regionselect.js'),
+      import('./js/regionSelect.js'),
       import('./js/opencv.js')
     ]);
     console.log('import success', { RegionSelect, opencv });
@@ -33,15 +23,15 @@ import mashroomImage from './img/mashroom.png'
 })();
 
 document.querySelector('#app').innerHTML = `
-  <h1>Image Resize 2(mosaic)</h1>
+  <h1>Image Resize / Mosaic</h1>
   <div>
     <img id="image" width="320" src="${mashroomImage}" alt="image" /><br>
-    <canvas id="canvasRoi" width="100" class="placeholder"></canvas><br>
+    <canvas id="canvasRoi" width="100" class="placeholder"></canvas>
     <canvas id="canvasMosaic" width="100" class="placeholder"></canvas><br>
     <canvas id="canvas" width="320" class="placeholder"></canvas>
   </div>
   <div>
-    縮小率: <input id="range" type="range" min="2" value="10" max="30" />
+    Mosaic: <input id="range" type="range" min="2" value="10" max="30" />
   </div>
 `
 
