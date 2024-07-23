@@ -29,12 +29,6 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/roi/)
 
-### Color
-
-
-### Image processing
-
-
 ### Video processing
 - Composite video frames and images - 0301addimage/<br>
   - `npm run build` is available.<br>
@@ -54,6 +48,25 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Video Opticalflow - 0306opticalflow/
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/opticalflow/)
+
+### Image processing
+- Image Resize / Mosaic / All - 0401imageresize/<br>
+  - (note) no check `npm run build` only `npm run dev`.
+- Image Resize / Mosaic / A part - 0402imageresize2/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/imageresize2/)
+- Image Blur - 0403imageblur/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/blur/)
+- Image Resize / Mosaic / A part - 0404imageedge/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/edge/)
+- Image Resize / Mosaic / A part - 0405imageedgeanime/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/edgeAnime/)
+
+
+### Color
 
 ## Download and Install
 - OpenCV.js Library download

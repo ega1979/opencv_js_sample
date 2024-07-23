@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-const base = process.env.NODE_ENV === 'production' ? '/opencv/imgresize1/' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/opencv/blur/' : '/';
 
 export default defineConfig({
     base,
