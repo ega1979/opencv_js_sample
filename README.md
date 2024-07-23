@@ -64,6 +64,9 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Image Resize / Mosaic / A part - 0405imageedgeanime/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/edgeAnime/)
+- Detect QR Code - 0406qr/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/qr/)
 
 
 ### Color
