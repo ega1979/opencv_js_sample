@@ -28,7 +28,7 @@ document.querySelector('#app').innerHTML = `
 const image = document.querySelector('#image');
 const select = document.querySelector('#select');
 
-const imgProc = (e) => {
+const imgProc = () => {
   console.log('imgProc');
   
   const src = cv.imread(image);

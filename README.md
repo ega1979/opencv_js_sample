@@ -70,6 +70,11 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Erase Powerlines - 0407morph/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/morph/)
+- Tilt correct - 0408hough/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/hough/)
+- Detect Faces - 0409detectface/<br>
+- Compose Images - 0410compose/<br>
 
 
 ### Color
