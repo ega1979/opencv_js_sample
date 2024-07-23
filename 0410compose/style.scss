@@ -1,0 +1,46 @@
+/* Body */
+body {
+    background-color: fff;
+    color: 000;
+    text-align: center;
+}
+
+/* ページタイトル */
+h1 {
+    font-size: 20px;
+    color: 000;
+}
+
+/* キャンバスなど画像を表示するエリアの輪郭線 */
+.placeholder {
+    outline: 2px gray dotted;
+    /* 周囲に点線で枠 */
+}
+
+/* <div> を横並びにする */
+div.inline {
+    display: inline-block;
+}
+
+/* <input> で変更される値を <span> でくくって示すとき、その値を目立たせる。 */
+span.currentValue {
+    color: DarkMagenta;
+    background-color: MistyRose;
+    padding: 3px 12px 3px 12px;
+    border-radius: 5px;
+}
+
+/* <input type="button"> ボタンを目立たせる */
+input[type="button"].click {
+    color: LightBlue;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: DarkCyan;
+    padding: 10px;
+    margin-left: 1em;
+}
+
+/* 要素を隠す */
+.hide {
+    display: none;
+}

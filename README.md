@@ -73,9 +73,12 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Tilt correct - 0408hough/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/hough/)
-- Detect Faces - 0409detectface/<br>
+- Detect Faces - 0409face/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/face/)
 - Compose Images - 0410compose/<br>
-
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/compose/)
 
 ### Color
 
