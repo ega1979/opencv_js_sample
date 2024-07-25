@@ -59,7 +59,7 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
   - (note) no check `npm run build` only `npm run dev`.
 - Image Resize / Mosaic / A part - 0402imageresize2/<br>
   - `npm run build` is available.<br>
-  - [Try on is here](https://edison-garden.tokyo/opencv/imageresize2/)
+  - [Try on is here](https://edison-garden.tokyo/opencv/imgresize2/)
 - Image Blur - 0403imageblur/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/blur/)
