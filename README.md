@@ -97,6 +97,9 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Color Hue - 0507hue/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/hue/)
+- Color Posterize - 0509poster/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/poster/)
 
 ## Download and Install
 - OpenCV.js Library download
