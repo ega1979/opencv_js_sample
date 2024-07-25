@@ -93,7 +93,8 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Analyze RGB color - 0504rgb/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/rgb/)
-
+- Change Background - 0505background/<br>
+  - (note) no check `npm run build` only `npm run dev`.
 - White and Black - 0506binary/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/binary/)
