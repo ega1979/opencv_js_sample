@@ -3,6 +3,11 @@
 ## Contents
 All the follow projects used [vite](https://vitejs.dev/), so please install with `npm` if you would like to download and use these projects. 
 
+### versions
+- Node.js: 20.12.2
+- npm: 10.8.2
+- vite: 5.3.4 
+
 ### Import and build
 - Build infomation of opencv.js - 0101buildinfo/<br>
   (note) no check `npm run build` only `npm run dev`.
