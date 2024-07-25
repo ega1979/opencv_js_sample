@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-const base = process.env.NODE_ENV === 'production' ? '/opencv/grayscale/' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/opencv/invert/' : '/';
 
 export default defineConfig({
     base,

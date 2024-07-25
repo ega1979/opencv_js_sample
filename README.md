@@ -81,6 +81,15 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
   - [Try on is here](https://edison-garden.tokyo/opencv/compose/)
 
 ### Color
+- Monochrome color - 0501grayscale/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/grayscale/)
+- Color Invert - 0502invert/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/invert/)
+- Sepia Color - 0503sepia/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/sepia/)
 
 ## Download and Install
 - OpenCV.js Library download
