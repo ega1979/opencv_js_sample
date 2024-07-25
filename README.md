@@ -94,6 +94,9 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/rgb/)
 
+- White and Black - 0506binary/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/binary/)
 - Color Hue - 0507hue/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/hue/)
