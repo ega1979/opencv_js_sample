@@ -90,6 +90,13 @@ All the follow projects used [vite](https://vitejs.dev/), so please install with
 - Sepia Color - 0503sepia/<br>
   - `npm run build` is available.<br>
   - [Try on is here](https://edison-garden.tokyo/opencv/sepia/)
+- Analyze RGB color - 0504rgb/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/rgb/)
+
+- Color Hue - 0507hue/<br>
+  - `npm run build` is available.<br>
+  - [Try on is here](https://edison-garden.tokyo/opencv/hue/)
 
 ## Download and Install
 - OpenCV.js Library download
